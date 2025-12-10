@@ -1,0 +1,53 @@
+export const worldLanguages = [
+    // 🌍 Most widely spoken first
+    { code: 'en', name_en: 'English', name_ru: 'английский' },
+    { code: 'zh', name_en: 'Chinese', name_ru: 'китайский' },
+    { code: 'es', name_en: 'Spanish', name_ru: 'испанский' },
+    { code: 'hi', name_en: 'Hindi', name_ru: 'хинди' },
+    { code: 'ar', name_en: 'Arabic', name_ru: 'арабский' },
+    { code: 'fr', name_en: 'French', name_ru: 'французский' },
+    { code: 'bn', name_en: 'Bengali', name_ru: 'бенгальский' },
+    { code: 'pt', name_en: 'Portuguese', name_ru: 'португальский' },
+    { code: 'ru', name_en: 'Russian', name_ru: 'русский' },
+    { code: 'de', name_en: 'German', name_ru: 'немецкий' },
+    { code: 'ja', name_en: 'Japanese', name_ru: 'японский' },
+    { code: 'ko', name_en: 'Korean', name_ru: 'корейский' },
+
+    // ——— A→Z (still popular, just not top 12) ———
+    { code: 'bg', name_en: 'Bulgarian', name_ru: 'болгарский' },
+    { code: 'cs', name_en: 'Czech', name_ru: 'чешский' },
+    { code: 'da', name_en: 'Danish', name_ru: 'датский' },
+    { code: 'el', name_en: 'Greek', name_ru: 'греческий' },
+    { code: 'fa', name_en: 'Persian', name_ru: 'персидский' },
+    { code: 'fi', name_en: 'Finnish', name_ru: 'финский' },
+    { code: 'gu', name_en: 'Gujarati', name_ru: 'гуджарати' },
+    { code: 'he', name_en: 'Hebrew', name_ru: 'иврит' },
+    { code: 'hu', name_en: 'Hungarian', name_ru: 'венгерский' },
+    { code: 'id', name_en: 'Indonesian', name_ru: 'индонезийский' },
+    { code: 'it', name_en: 'Italian', name_ru: 'итальянский' },
+    { code: 'mr', name_en: 'Marathi', name_ru: 'маратхи' },
+    { code: 'ms', name_en: 'Malay', name_ru: 'малайский' },
+    { code: 'my', name_en: 'Burmese', name_ru: 'бирманский' },
+    { code: 'nl', name_en: 'Dutch', name_ru: 'нидерландский' },
+    { code: 'no', name_en: 'Norwegian', name_ru: 'норвежский' },
+    { code: 'pa', name_en: 'Punjabi', name_ru: 'панджаби' },
+    { code: 'pl', name_en: 'Polish', name_ru: 'польский' },
+    { code: 'ro', name_en: 'Romanian', name_ru: 'румынский' },
+    { code: 'sk', name_en: 'Slovak', name_ru: 'словацкий' },
+    { code: 'sr', name_en: 'Serbian', name_ru: 'сербский' },
+    { code: 'sv', name_en: 'Swedish', name_ru: 'шведский' },
+    { code: 'sw', name_en: 'Swahili', name_ru: 'суахили' },
+    { code: 'ta', name_en: 'Tamil', name_ru: 'тамильский' },
+    { code: 'te', name_en: 'Telugu', name_ru: 'телугу' },
+    { code: 'th', name_en: 'Thai', name_ru: 'тайский' },
+    { code: 'tl', name_en: 'Tagalog', name_ru: 'тагалог' },
+    { code: 'tr', name_en: 'Turkish', name_ru: 'турецкий' },
+    { code: 'uk', name_en: 'Ukrainian', name_ru: 'украинский' },
+    { code: 'ur', name_en: 'Urdu', name_ru: 'урду' },
+    { code: 'uz', name_en: 'Uzbek', name_ru: 'узбекский' },
+    { code: 'vi', name_en: 'Vietnamese', name_ru: 'вьетнамский' },
+] as const
+
+// Optional handy types:
+export type PopularLanguageCode = (typeof worldLanguages)[number]['code']
+export type PopularLanguageNameEn = (typeof worldLanguages)[number]['name_en']

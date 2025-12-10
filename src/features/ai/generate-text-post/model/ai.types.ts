@@ -1,0 +1,11 @@
+export type AiToneId =
+    | 'friendly'
+    | 'professional'
+    | 'informative'
+    | 'humorous'
+    | 'inspirational'
+    | 'empathetic'
+    | 'authoritative'
+    | 'playful'
+    | 'educational'
+    | 'urgent'
