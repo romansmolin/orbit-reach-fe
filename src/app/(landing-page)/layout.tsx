@@ -4,8 +4,8 @@ import { Montserrat } from 'next/font/google'
 import { LoginButton } from '@/features/auth/ui/login-button'
 import { GoogleAnalytics } from '@/shared/components'
 
-import Header01 from '../_layout/basic/header01'
 import Footer2 from '../_layout/basic/footer2'
+import Header01 from '../_layout/basic/header01'
 import '../globals.css'
 
 const montserrat = Montserrat({
@@ -68,7 +68,7 @@ export default function RootLayout({
             <body className="antialiased overflow-x-hidden">
                 <GoogleAnalytics measurementId="G-37FFNP35CS" />
                 <Header01 actions={<LoginButton />} navigationData={navigationData} />
-                <main className="flex flex-col mx-auto -mt-[88px]">{children}</main>
+                <main className="flex flex-col mx-auto ">{children}</main>
                 <Footer2 />
             </body>
         </html>

@@ -6,7 +6,7 @@ import { Button } from '@/shared/ui/button'
 
 export const HeroSection01 = () => {
     return (
-        <section className="flex pt-40 lg:pt-50 min-h-[calc(100dvh-4rem)] flex-1 flex-col justify-between gap-12 overflow-x-hidden sm:gap-16 sm:pt-16 lg:gap-24">
+        <section className="flex pt-50 min-h-[calc(100dvh-4rem)] flex-1 flex-col justify-between gap-12 overflow-x-hidden sm:gap-16 sm:pt-16 lg:gap-24">
             <div className="mx-auto flex max-w-7xl flex-col items-center gap-8 px-4 text-center sm:px-6 lg:px-8">
                 <div className="bg-muted flex items-center gap-2.5 rounded-full border px-3 py-2">
                     <Badge>AI-Powered</Badge>
